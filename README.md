@@ -7,7 +7,7 @@
 7. python manage.py migrate
 8. python manage.py runserver
 9. go to: http://127.0.0.1:8000/paint/ for 'Homepage'
-10. go to: http://127.0.0.1:8000/paint/ for 'Adminpage' (dataset management)
+10. go to: http://127.0.0.1:8000/admin/ for 'Adminpage' (dataset management)
 
 ![alt text](tmp/p1.png)
 ---------------------------------------------------
