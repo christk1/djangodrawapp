@@ -1,0 +1,5 @@
+[client]
+database = websitedb
+user = root
+password = pass
+default-character-set = utf8

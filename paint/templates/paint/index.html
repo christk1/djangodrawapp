@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'paint/edstyle.css' %}">
+
+
+<a href="{% url 'paint:editor' %}"><button class="myButton">Enter Editor</button></a>
+{% if drawing %}
+  <div id="table">
+    {% for dr in drawing %}
+      <div class="img_shell">
+          <img class="img" src={{ dr.drawing }}>
+          <p class="txt" >{{ dr.pub_date }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

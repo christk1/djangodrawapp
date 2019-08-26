@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'paint/edstyle.css' %}">
+
+<h1 id="head" style="color: #9a9aaf;">unleash your imagination</h1>
+<canvas id="myCanvas" width="400" height="300">
+</canvas>
+<div class="buttons">
+  <a href="{% url 'paint:index' %}"><button class="myButton" style="padding:6px 6px;"">Exit</button></a>
+  <button class="myButton" onclick="clearcanv()" style="padding:6px 6px;">clear</button>
+  <form action="/" id="pic_share_form" style="display: inline; margin: 0;">
+    {% csrf_token %}
+    <input class="myButton" style="padding:6px 6px;" type="submit" value="share">
+  </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'paint/jsrc.js' %}"></script>
